@@ -1,0 +1,27 @@
+// Variaveis de cores
+$bege-claro: #edece4;
+$bege-medio: #cbc6b9;
+$bege-escuro: #988c77;
+$cinza: #2a2426;
+$verde: #1ab912;
+
+// Variaveis de fontes
+$fonte-1: 'PT Mono', monospace;
+$fonte-2: 'Aref Ruqaa', serif;
+
+// Mixins
+@mixin tipo-1($size) {
+    font-family: $fonte-1;
+    @if $size == 18 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@mixin tipo-2($size)  {
+    font-family: $fonte-2;
+    @if $size == 24 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
